@@ -16,8 +16,8 @@ locals {
     "callisto-test-2" : {
       "checks" : concat(local.checks.drone, local.checks.code_analysis)
     },
-    "callisto-build-github" : { 
-        "checks": ["terraform-validate" ]
+    "callisto-build-github" : {
+      "checks" : ["terraform-validate"]
     }
   }
   repository_configs = {
