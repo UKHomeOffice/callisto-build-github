@@ -9,7 +9,9 @@ locals {
     ]
   }
 
-  repositories = {
+  reposit
+  {
+  ories = {
     "callisto-test-1" : {
       "checks" : concat(local.checks.drone, local.checks.code_analysis)
     },
