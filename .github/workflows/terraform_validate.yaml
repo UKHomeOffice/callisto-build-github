@@ -2,7 +2,7 @@
 name: Validate Configuration
 on:
   push:
-    branches_ignore:
+    branches-ignore:
       - main
   pull_request:
     branches:
