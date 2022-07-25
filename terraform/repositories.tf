@@ -18,6 +18,12 @@ locals {
     },
     "callisto-build-github" : {
       "checks" : ["terraform-validate"]
+    },
+    "callisto-ingress-nginx" : {
+      "checks" : local.checks.drone
+    },
+    "callisto-ui-nginx" : {
+      "checks" : local.checks.drone
     }
   }
   repository_configs = {
