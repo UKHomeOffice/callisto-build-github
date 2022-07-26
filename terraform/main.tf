@@ -1,6 +1,5 @@
 terraform {
   backend "s3" {
-    bucket = "ho-callisto-terraform"
     key    = "terraform/build/callisto-build-github"
   }
 }
