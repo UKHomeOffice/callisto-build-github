@@ -26,7 +26,7 @@ locals {
       "checks" : local.checks.drone
     },
     "callisto-jparest" : {
-      "checks" : concat(local.checks.drone, local.checks.code.code_analysis)
+      "checks" : concat(local.checks.drone, local.checks.code_analysis)
     }
     
   }
