@@ -24,7 +24,11 @@ locals {
     },
     "callisto-ui-nginx" : {
       "checks" : local.checks.drone
+    },
+    "callisto-jparest" : {
+      "checks" : local.checks.drone
     }
+    
   }
   repository_configs = {
     for k, v in local.repositories : k => {
