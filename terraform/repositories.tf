@@ -25,7 +25,7 @@ locals {
     "callisto-ui-nginx" : {
       "checks" : local.checks.drone
     },
-    "callisto-jparest" : {
+    "callisto-jpa-rest" : {
       "checks" : concat(local.checks.drone, local.checks.code_analysis)
     }
     
