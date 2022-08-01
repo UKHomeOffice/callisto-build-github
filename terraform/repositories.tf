@@ -24,6 +24,9 @@ locals {
     },
     "callisto-ui-nginx" : {
       "checks" : local.checks.drone
+    },
+    "callisto-timecard-restapi" : {
+      "checks" : local.checks.drone
     }
   }
   repository_configs = {
