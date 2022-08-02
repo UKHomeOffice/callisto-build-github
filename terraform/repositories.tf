@@ -27,7 +27,7 @@ locals {
     },
     "callisto-timecard-restapi" : {
       "checks" : local.checks.drone
-    }
+    },
     "callisto-jparest" : {
       "checks" : local.checks.drone
     }
