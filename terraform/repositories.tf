@@ -30,6 +30,12 @@ locals {
     },
     "callisto-jparest" : {
       "checks" : local.checks.drone
+    },
+    "callisto-ui" : {
+      "checks" : local.checks.drone
+    },
+    "callisto-accruals-restapi" : {
+      "checks" : local.checks.drone
     }
   }
   repository_configs = {
