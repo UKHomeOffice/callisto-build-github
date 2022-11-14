@@ -22,6 +22,8 @@ locals {
     "callisto-ingress-nginx" : {
       "checks" : local.checks.drone
     },
+    "callisto-localdev" : {
+    },
     "callisto-ui-nginx" : {
       "checks" : local.checks.drone
     },
