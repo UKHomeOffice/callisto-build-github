@@ -38,6 +38,8 @@ locals {
     },
     "callisto-accruals-restapi" : {
       "checks" : local.checks.drone
+    },
+    "callisto-auth-keycloak" : {
     }
   }
   repository_configs = {
