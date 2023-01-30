@@ -42,7 +42,7 @@ locals {
     "callisto-auth-keycloak" : {
       "checks" : [
         "terraform-validate (development)",
-        "terraform-validate (test)", 
+        "terraform-validate (test)",
         "terraform-validate (production)"
       ]
     },
