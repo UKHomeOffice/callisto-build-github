@@ -40,7 +40,11 @@ locals {
       "checks" : local.checks.drone
     },
     "callisto-auth-keycloak" : {
-      "checks" : ["terraform-validate"]
+      "checks" : [
+        "terraform-validate (development)",
+        "terraform-validate (test)",
+        "terraform-validate (production)"
+      ]
     },
     "callisto-devops" : {
     }
