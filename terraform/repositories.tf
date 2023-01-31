@@ -3,18 +3,15 @@ locals {
     drone = [
       "continuous-integration/drone/pr",
       "continuous-integration/drone/push"
-    ],
-    code_analysis = [
-      "SonarCloud"
     ]
   }
 
   repositories = {
     "callisto-test-1" : {
-      "checks" : concat(local.checks.drone, local.checks.code_analysis)
+      "checks" : local.checks.drone
     },
     "callisto-test-2" : {
-      "checks" : concat(local.checks.drone, local.checks.code_analysis)
+      "checks" : local.checks.drone
     },
     "callisto-build-github" : {
       "checks" : ["terraform-validate"]
@@ -37,6 +34,9 @@ locals {
       "checks" : local.checks.drone
     },
     "callisto-accruals-restapi" : {
+      "checks" : local.checks.drone
+    },
+    "callisto-person-restapi" : {
       "checks" : local.checks.drone
     },
     "callisto-auth-keycloak" : {

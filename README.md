@@ -11,7 +11,7 @@ be consistent.
 Over time, the team may be provided access to other repositories that they do not own.
 Keeping this in mind, the choice was made that repositories would need to be explicitly
 configured to have this configuration applied to them. This avoids this terraform
-configuration from being mistakenly applied to other respositories that the team
+configuration from being mistakenly applied to other repositories that the team
 were provided access to.
 
 To include a repository it must be created first and then added to the configuration
@@ -24,7 +24,7 @@ includes the repository name and the checks required on pull requests for the ma
 
 As the configuration matures and different repositories are added we expect the checks
 required to vary but to have commonality across similar repository types or CI/CD 
-processes. Therefore the checks have been grouped and can be concated together to meet
+processes. Therefore, the checks have been grouped and can be concatenated together to meet
 the needs of the repository.
 
 For example, if we had 2 repositories, 1 containing code and another that only publishes
