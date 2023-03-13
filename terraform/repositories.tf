@@ -47,6 +47,10 @@ locals {
       ]
     },
     "callisto-devops" : {
+    },
+    "callisto-service-template" : {
+    },
+    "callisto-helm-charts" : {
     }
   }
   repository_configs = {
