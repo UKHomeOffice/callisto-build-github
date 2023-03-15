@@ -39,6 +39,12 @@ locals {
     "callisto-person-restapi" : {
       "checks" : local.checks.drone
     },
+    "callisto-accruals-person-consumer" : {
+      "checks" : local.checks.drone
+    },
+    "callisto-balance-calculator" : {
+      "checks" : local.checks.drone
+    },
     "callisto-auth-keycloak" : {
       "checks" : [
         "terraform-validate (development)",
