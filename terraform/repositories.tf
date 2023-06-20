@@ -7,12 +7,6 @@ locals {
   }
 
   repositories = {
-    "callisto-test-1" : {
-      "checks" : local.checks.drone
-    },
-    "callisto-test-2" : {
-      "checks" : local.checks.drone
-    },
     "callisto-build-github" : {
       "checks" : ["terraform-validate"]
     },
