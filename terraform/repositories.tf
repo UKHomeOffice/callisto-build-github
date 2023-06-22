@@ -25,7 +25,7 @@ locals {
       "checks" : local.checks.drone
     },
     "callisto-kafka-commons" : {
-      "checks" : local.checks.drone
+      "checks" : ["Build and analyze"]
     },
     "callisto-ui" : {
       "checks" : local.checks.drone
