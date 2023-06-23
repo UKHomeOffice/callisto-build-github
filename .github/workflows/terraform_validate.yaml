@@ -33,3 +33,8 @@ jobs:
     - name: Terraform Format
       id: fmt
       run: terraform fmt -check -recursive
+
+    - name: Terraform Plan
+      if: github.event_name == 'pull_request'
+      id: plan
+      run: terraform plan
