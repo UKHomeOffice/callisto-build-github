@@ -31,4 +31,13 @@ resource "github_team_repository" "callisto_repos" {
   permission = "push"
 }
 
+data "github_team" "callisto_admins" {
+  slug = "callisto-admins"
+}
 
+resource "github_team_repository" "callisto_admin_repos" {
+  for_each   = module.repository
+  team_id    = data.github_team.callisto_admins.id
+  repository = each.value.name
+  permission = "admin"
+}
