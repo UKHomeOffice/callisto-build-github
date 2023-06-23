@@ -28,7 +28,7 @@ resource "github_team_repository" "callisto_repos" {
   for_each   = module.repository
   team_id    = data.github_team.callisto.id
   repository = each.value.name
-  permission = "push"
+  permission = "maintain"
 }
 
 
