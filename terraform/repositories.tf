@@ -44,9 +44,9 @@ locals {
     },
     "callisto-auth-keycloak" : {
       "checks" : [
-        "terraform-validate (development)",
-        "terraform-validate (test)"
-        # Uncomment the following line if a production keycloak realm is reinstated
+        # Uncomment the following lines if keycloak realms are reinstated
+        # "terraform-validate (development)",
+        # "terraform-validate (test)",
         # "terraform-validate (production)"
       ]
     },
